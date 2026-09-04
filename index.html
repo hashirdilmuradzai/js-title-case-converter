@@ -4,14 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Title Case Converter</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>JavaScript Title Case Converter</h1>
-    <form onsubmit="titleCase(event)">
-      <input id="title-case" type="text" placeholder="Enter Your Text Here" />
-      <button type="submit">Convert</button>
-    </form>
-    <p id="title-case-result"></p>
+    <div class="container">
+      <h1>
+        <span>JavaScript Title Case Converter</span>
+      </h1>
+      <form onsubmit="titleCase(event)">
+        <!-- <input id="title-case" type="text" placeholder="Enter Your Text Here" /> -->
+        <textarea
+          id="title-case"
+          rows="5"
+          cols="30"
+          placeholder="Enter your message"
+        ></textarea>
+        <button type="submit">Convert</button>
+      </form>
+      <p id="title-case-result"></p>
+    </div>
 
     <script src="./script.js"></script>
   </body>
