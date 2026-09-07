@@ -13,6 +13,10 @@ function titleCase(event) {
   for (i = 0; i < titleCaseArray.length; i++) {
     let titleCaseWord = titleCaseArray[i];
 
+    if (titleCaseWord === "") {
+      continue;
+    }
+
     titleCaseResult +=
       titleCaseWord[0].toUpperCase() +
       titleCaseWord.slice(1).toLowerCase() +
